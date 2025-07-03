@@ -120,22 +120,7 @@ function App() {
   //--------------------------------------------------------------
   return (
   <>
-   /* <video
-      autoPlay
-      loop
-      muted
-      playsInline
-      style={{
-        position: 'fixed',
-        zIndex: -1,
-        minWidth: '100vw',
-        minHeight: '100vh',
-        objectFit: 'cover',
-        objectPosition: 'center center',
-        top: 0,
-        left: 0,
-      }}
-    > */ <video
+  <video
   className="background-video"
   autoPlay
   loop
