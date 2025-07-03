@@ -20,12 +20,15 @@ Deployment: Vercel (frontend), Render (backend)
 
 ## Live Demo
 Frontend: https://deepspace-project-frontend.onrender.com
+
 Backend: https://deepspace-project.onrender.com
 
 ## Getting Started
 1. Clone the Repository
 In your terminal navigate to the nasa-explorer folder.
+
 git clone https://github.com/yourusername/nasa-explorer.git
+
 cd nasa-explorer
 
 ## SETUP FOR THE BACKEND
@@ -72,6 +75,8 @@ nasa-explorer/
   /epic/latest — Latest Earth image
 
   /search — NASA Image & Video Library
+
+  
 
 
   
