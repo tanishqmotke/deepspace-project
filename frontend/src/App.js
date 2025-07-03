@@ -131,7 +131,6 @@ function App() {
         minWidth: '100vw',
         minHeight: '100vh',
         objectFit: 'cover',
-        opacity: 0.6,
         top: 0,
         left: 0,
       }}
