@@ -118,25 +118,29 @@ function App() {
 };
 
   return (
+    <>
     <video
-  autoPlay
-  loop
-  muted
-  playsInline
-  style={{
-    position: 'fixed',
-    zIndex: -1,
-    minWidth: '100vw',
-    minHeight: '100vh',
-    objectFit: 'cover',
-    opacity: 0.6,
-    top: 0,
-    left: 0,
-  }}
->
-  <source src="/background.mp4" type="video/mp4" />
-  Your browser does not support the video tag.
-</video>
+      autoPlay
+      loop
+      muted
+      playsInline
+      style={{
+        position: 'fixed',
+        zIndex: -1,
+        minWidth: '100vw',
+        minHeight: '100vh',
+        objectFit: 'cover',
+        opacity: 0.6,
+        top: 0,
+        left: 0,
+      }}
+    >
+      <source src="/background.mp4" type="video/mp4" />
+      Your browser does not support the video tag.
+    </video>
+    <div style={{ minHeight: '100vh', background: 'none', position: "relative" }}>
+    </div>
+ 
      <div style={{ minHeight: '100vh', background: 'none', position: "relative" }}>
     
 
@@ -287,6 +291,7 @@ function App() {
       </div>
     </div>
   );
+ </>
 }
 
 export default App;
