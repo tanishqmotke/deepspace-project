@@ -45,6 +45,13 @@ body, html, #root {
   font-weight: bold;
 }
 
+.glass-bg {
+  background: rgba(0, 0, 0, 0.72);
+  border-radius: 18px;
+  padding: 28px 18px;
+  box-shadow: 0 8px 32px 0 rgba(0,0,0,0.4);
+}
+
 .background-video {
   position: fixed;
   top: 0; left: 0;
