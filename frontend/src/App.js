@@ -117,8 +117,9 @@ function App() {
   }
 };
 
+  //--------------------------------------------------------------
   return (
-    <>
+  <>
     <video
       autoPlay
       loop
@@ -138,12 +139,8 @@ function App() {
       <source src="/background.mp4" type="video/mp4" />
       Your browser does not support the video tag.
     </video>
-    <div style={{ minHeight: '100vh', background: 'none', position: "relative" }}>
-    </div>
- 
-     <div style={{ minHeight: '100vh', background: 'none', position: "relative" }}>
-    
 
+    <div style={{ minHeight: '100vh', background: 'none', position: "relative" }}>
       <Header active={active} setActive={handleTabChange} onSearch={handleHeaderSearch} />
 
       <div className="container py-4 main-content">
@@ -151,18 +148,18 @@ function App() {
 
         {active === 'apod' && (
           <div className="main-content d-flex flex-column align-items-center justify-content-center" style={{ minHeight: '80vh' }}>
-            
             <div className="text-center mb-4">
-  <h2 style={{ fontWeight: 700, fontSize: "2.3rem", letterSpacing: 2 }}>
-    {getWelcomeContent().title}
-  </h2>
-  <div style={{ fontSize: "1.19rem", opacity: 0.84, marginBottom: 4 }}>
-    {getWelcomeContent().subtitle}
-  </div>
-  <div style={{ fontSize: "1.09rem", color: "#9fd3ff", marginBottom: 22 }}>
-    {getWelcomeContent().action}
-  </div>
-</div><button
+              <h2 style={{ fontWeight: 700, fontSize: "2.3rem", letterSpacing: 2 }}>
+                {getWelcomeContent().title}
+              </h2>
+              <div style={{ fontSize: "1.19rem", opacity: 0.84, marginBottom: 4 }}>
+                {getWelcomeContent().subtitle}
+              </div>
+              <div style={{ fontSize: "1.09rem", color: "#9fd3ff", marginBottom: 22 }}>
+                {getWelcomeContent().action}
+              </div>
+            </div>
+            <button
               onClick={fetchApod}
               className="btn btn-primary mb-3"
               disabled={apodLoading}
@@ -186,22 +183,23 @@ function App() {
             )}
           </div>
         )}
+
         {active === 'mars' && (
           <div
             className="main-content d-flex flex-column align-items-center justify-content-center"
             style={{ minHeight: '80vh' }}
           >
             <div className="text-center mb-4">
-  <h2 style={{ fontWeight: 700, fontSize: "2.3rem", letterSpacing: 2 }}>
-    {getWelcomeContent().title}
-  </h2>
-  <div style={{ fontSize: "1.19rem", opacity: 0.84, marginBottom: 4 }}>
-    {getWelcomeContent().subtitle}
-  </div>
-  <div style={{ fontSize: "1.09rem", color: "#9fd3ff", marginBottom: 22 }}>
-    {getWelcomeContent().action}
-  </div>
-</div>
+              <h2 style={{ fontWeight: 700, fontSize: "2.3rem", letterSpacing: 2 }}>
+                {getWelcomeContent().title}
+              </h2>
+              <div style={{ fontSize: "1.19rem", opacity: 0.84, marginBottom: 4 }}>
+                {getWelcomeContent().subtitle}
+              </div>
+              <div style={{ fontSize: "1.09rem", color: "#9fd3ff", marginBottom: 22 }}>
+                {getWelcomeContent().action}
+              </div>
+            </div>
             <button
               onClick={fetchEpic}
               className="btn btn-success mb-3"
@@ -253,20 +251,20 @@ function App() {
                 required
               />
               <button
-  type="submit"
-  className="btn btn-info"
-  disabled={searchLoading}
->
-  {searchLoading ? (
-    <>
-      <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
-      Loading...
-    </>
-  ) : (
-    "Search"
-  )}
-</button>
-</form>
+                type="submit"
+                className="btn btn-info"
+                disabled={searchLoading}
+              >
+                {searchLoading ? (
+                  <>
+                    <span className="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>
+                    Loading...
+                  </>
+                ) : (
+                  "Search"
+                )}
+              </button>
+            </form>
             {searchImages.length > 0 && (
               <div className="row">
                 {searchImages.map((item, idx) => {
@@ -290,8 +288,8 @@ function App() {
         )}
       </div>
     </div>
-  );
- </>
-}
+  </>
+);
+
 
 export default App;
