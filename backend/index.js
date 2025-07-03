@@ -17,8 +17,8 @@ app.listen(PORT, () => {
   console.log(`Server running on http://localhost:${PORT}/`);
 });
 
-// Add this at the top with your other imports
-// const axios = require('axios'); // Already imported!
+
+//--------------------------------GET APOD--------------------------------
 app.get('/apod', async (req, res) => {
   try {
     const apiKey = process.env.NASA_API_KEY;
@@ -30,6 +30,7 @@ app.get('/apod', async (req, res) => {
   }
 });
 
+//--------------------------------GET EPIC--------------------------------
 app.get('/epic/latest', async (req, res) => {
   try {
     const apiKey = process.env.NASA_API_KEY;
@@ -56,7 +57,7 @@ app.get('/epic/latest', async (req, res) => {
 });
 
 
-// NASA Image and Video Library Search API
+// --------------------------------NASA Image and Video Library Search API--------------------------------
 app.get('/search', async (req, res) => {
   try {
     const q = req.query.q;
