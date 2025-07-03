@@ -38,7 +38,8 @@ Follow the below steps for the Backend:
 These code runs on http://localhost:4000
 In the .env file you can paste the generated NASA API KEY in this form NASA_API_KEY=YOUR_NASA_API_KEY
 
-##SETUP FOR THE FRONTEND :Follow the below steps for the Frontend:
+## SETUP FOR THE FRONTEND
+Follow the below steps for the Frontend:
 1. cd ../frontend
 2. npm install
 3. cp .env.example .env
@@ -51,6 +52,17 @@ In the .env file you can paste the generated NASA API KEY in this form NASA_API_
 2. /epic/latest — Latest Earth image
 3. /search — NASA Image & Video Library
 
+## 🚀 How it Works
+The React frontend sends requests to the backend for APOD, Earth images, or search.
+
+The Express backend calls the NASA APIs, then passes results back to the frontend.
+
+The UI shows images and explanations, and has search with instant feedback and “no results” messaging.
+
+## 🙌 Credits
+Built using NASA Open APIs: https://api.nasa.gov/
+
+UI inspired by NASA and open-source space apps.
   
 
 
