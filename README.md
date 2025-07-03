@@ -1,1 +1,77 @@
+# 🚀 DeepSpace – NASA Explorer
 
+Welcome to DeepSpace!  
+A visually immersive web app for exploring NASA’s open space data. Built with React, Node.js/Express, and NASA Open APIs, 
+DeepSpace lets you browse the Astronomy Picture of the Day, Mars/Earth images, and the NASA Image Library—all from one sleek interface.
+
+## Features
+
+Astronomy Picture of the Day (APOD): Get NASA’s daily space photo with explanation.  
+Mars Rover & EPIC Images: View the latest Earth snapshot from space.  
+Image Search: Explore NASA’s photo archive by keyword.  
+Modern UI: Animated background, clean layout, mobile-ready.  
+Loading indicators & error handling.
+
+## Tech Stack
+Frontend: React, Bootstrap, Axios  
+Backend: Node.js, Express  
+APIs: NASA Open APIs (https://api.nasa.gov/)  
+Deployment: Vercel (frontend), Render (backend)
+
+## Live Demo
+Frontend: [your-vercel-link](#)  
+Backend: [your-render-link](#)
+
+## Getting Started
+1. Clone the Repository
+In your terminal navigate to the nasa-explorer folder.
+git clone https://github.com/yourusername/nasa-explorer.git
+cd nasa-explorer
+
+## SETUP FOR THE BACKEND
+Follow the below steps for the Backend:
+cd backend
+npm install
+cp .env.example .env
+# Edit .env and add your NASA_API_KEY (you can get it free at https://api.nasa.gov/)
+npm start
+# These code runs on http://localhost:4000
+
+In the .env file you can paste the generated NASA API KEY in this form NASA_API_KEY=YOUR_NASA_API_KEY
+
+##SETUP FOR THE FRONTEND
+Follow the below steps for the Frontend:
+cd ../frontend
+npm install
+cp .env.example .env
+# Edit .env and set your backend URL if not using localhost
+npm start
+# Runs on http://localhost:3000
+
+#########################################################################################################
+Below is the Project Structure:
+nasa-explorer/
+  ├── backend/
+  │    ├── index.js
+  │    ├── package.json
+  │    └── .env.example
+  ├── frontend/
+  │    ├── src/
+  │    │    ├── App.js
+  │    │    ├── Header.js
+  │    │    ├── App.css
+  │    │    └── background.mp4
+  │    ├── public/
+  │    ├── package.json
+  │    └── .env.example
+  └── README.md
+  #########################################################################################################
+   API Endpoints
+  /apod — Astronomy Picture of the Day
+
+  /epic/latest — Latest Earth image
+
+  /search — NASA Image & Video Library
+
+
+  
