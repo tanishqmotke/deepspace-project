@@ -148,7 +148,7 @@ function App() {
                 )}
               </button>
               {apod && (
-                <div className="mt-4 text-center">
+                <div className="glass-bg mt-4 text-center">
                   <h2>{apod.title}</h2>
                   <img src={apod.url} alt={apod.title} className="img-fluid rounded shadow mb-3" style={{ maxHeight: 400 }} />
                   <p className="mx-auto" style={{ maxWidth: 600 }}>{apod.explanation}</p>
@@ -189,7 +189,7 @@ function App() {
                 )}
               </button>
               {epic && (
-                <div className="mt-4 text-center">
+                <div className="glass-bg mt-4 text-center">
                   <h2>Earth as seen by DSCOVR EPIC</h2>
                   <img
                     src={epic.imageUrl}
