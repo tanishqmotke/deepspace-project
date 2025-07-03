@@ -4,7 +4,7 @@ import './App.css';
 import Header from './Header';
 import React, { useState } from 'react';
 import axios from 'axios';
-
+const API_URL = process.env.REACT_APP_API_URL || "http://localhost:4000";
 
 function App() {
   const [active, setActive] = useState('apod');
@@ -27,7 +27,7 @@ function App() {
     setSearchImages([]);
     setApodLoading(true); // Start loading
     try {
-      const response = await axios.get('http://localhost:4000/apod');
+      const response = await axios.get(`${API_URL}/apod`);
       setApod(response.data);
     } catch {
       setError('Failed to fetch NASA Astronomy Picture of the Day');
@@ -43,7 +43,7 @@ function App() {
     setSearchImages([]);
     setEpicLoading(true);
     try {
-      const response = await axios.get('http://localhost:4000/epic/latest');
+      const response = await axios.get(`${API_URL}/epic/latest`);
       setEpic(response.data);
     } catch {
       setError('Failed to fetch latest Earth image.');
@@ -61,7 +61,7 @@ function App() {
     setSearchImages([]);
     setSearchLoading(true);
     try {
-      const response = await axios.get(`http://localhost:4000/search?q=${encodeURIComponent(q || searchTerm)}`);
+      const response = await axios.get(`${API_URL}/search?q=${encodeURIComponent(q || searchTerm)}`);
       setSearchImages(response.data.collection.items.slice(0, 18));
     } catch {
       setError('Failed to fetch NASA images.');
