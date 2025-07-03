@@ -6,11 +6,11 @@ DeepSpace lets you browse the Astronomy Picture of the Day, Mars/Earth images, a
 
 ## Features
 
-Astronomy Picture of the Day (APOD): Get NASA’s daily space photo with explanation.  
-Mars Rover & EPIC Images: View the latest Earth snapshot from space.  
-Image Search: Explore NASA’s photo archive by keyword.  
-Modern UI: Animated background, clean layout, mobile-ready.  
-Loading indicators & error handling.
+1. Astronomy Picture of the Day (APOD): Get NASA’s daily space photo with explanation.  
+2. Mars Rover & EPIC Images: View the latest Earth snapshot from space.  
+3. Image Search: Explore NASA’s photo archive by keyword.  
+4. Modern UI: Animated background, clean layout, mobile-ready.  
+5. Loading indicators & error handling.
 
 ## Tech Stack
 Frontend: React, Bootstrap, Axios  
@@ -19,8 +19,8 @@ APIs: NASA Open APIs (https://api.nasa.gov/)
 Deployment: Vercel (frontend), Render (backend)
 
 ## Live Demo
-Frontend: [your-vercel-link](#)  
-Backend: [your-render-link](#)
+Frontend: https://deepspace-project-frontend.onrender.com
+Backend: https://deepspace-project.onrender.com
 
 ## Getting Started
 1. Clone the Repository
