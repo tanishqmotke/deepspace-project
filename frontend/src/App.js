@@ -131,6 +131,7 @@ function App() {
         minWidth: '100vw',
         minHeight: '100vh',
         objectFit: 'cover',
+        objectPosition: 'center center',
         top: 0,
         left: 0,
       }}
