@@ -122,7 +122,7 @@ function App() {
 
           {active === 'apod' && (
             <div className="main-content d-flex flex-column align-items-center justify-content-center" style={{ minHeight: '80vh' }}>
-              <div className="text-center mb-4">
+              <div className="glass-bg text-center mb-4">
                 <h2 style={{ fontWeight: 700, fontSize: "2.3rem", letterSpacing: 2 }}>
                   {getWelcomeContent().title}
                 </h2>
@@ -163,7 +163,7 @@ function App() {
               className="main-content d-flex flex-column align-items-center justify-content-center"
               style={{ minHeight: '80vh' }}
             >
-              <div className="text-center mb-4">
+              <div className="glass-bg text-center mb-4">
                 <h2 style={{ fontWeight: 700, fontSize: "2.3rem", letterSpacing: 2 }}>
                   {getWelcomeContent().title}
                 </h2>
