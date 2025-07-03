@@ -4,7 +4,7 @@ import './App.css';
 import Header from './Header';
 import React, { useState } from 'react';
 import axios from 'axios';
-const API_URL = process.env.REACT_APP_API_URL || "http://localhost:4000";
+const API_URL = process.env.REACT_APP_API_URL;
 
 function App() {
   const [active, setActive] = useState('apod');
